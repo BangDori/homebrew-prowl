@@ -22,7 +22,13 @@ cask "prowl" do
     end
   
     app "Prowl.app"
-  
+ 
+    postflight do
+      system_command "/usr/bin/xattr",
+                     args: ["-cr", "#{appdir}/Prowl.app"],
+                     sudo: false
+    end
+    
     zap trash: [
       "~/Library/Application Support/prowl",
       "~/Library/Preferences/com.bangdori.prowl.plist",
