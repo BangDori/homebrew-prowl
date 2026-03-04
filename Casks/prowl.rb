@@ -8,8 +8,8 @@
 #   brew upgrade --cask prowl
 
 cask "prowl" do
-    version "1.50.1"
-    sha256 "3c8213576aba4e944558f581f3388926c7a0568e5a4a99bf89468801a2bbda56"
+    version "1.51.0"
+    sha256 "1d94018d978458f8da624212b7981a67d29faedb9ff217e72b9b4a75baaf5197"
   
     url "https://github.com/BangDori/prowl/releases/download/v#{version}/Prowl-#{version}-arm64-mac.zip"
     name "Prowl"
